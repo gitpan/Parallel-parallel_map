@@ -1,10 +1,10 @@
 {
-   "abstract" : "really parallel calculation in Perl",
+   "abstract" : "map in parallel using all CPU cores",
    "author" : [
       "Oleksandr Kharchenko <okharch@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120630",
+   "generated_by" : "ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.112621",
    "license" : [
       "unknown"
    ],
@@ -22,18 +22,20 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : 0
          }
       },
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "0"
+            "ExtUtils::MakeMaker" : 0
          }
       },
       "runtime" : {
-         "requires" : {}
+         "requires" : {
+            "Parallel::DataPipe" : "0.08"
+         }
       }
    },
    "release_status" : "stable",
-   "version" : "0.01"
+   "version" : "0.02"
 }
